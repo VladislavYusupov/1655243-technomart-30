@@ -75,6 +75,11 @@ img {
   color: var(--pickled-bluewood-light);
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
 /* Header */
 
 .main-header {
@@ -287,6 +292,10 @@ img {
 
 /* Categories */
 
+.categories {
+  margin-bottom: 59px;
+}
+
 .categories-list {
   display: grid;
   grid-template-areas:
@@ -299,6 +308,20 @@ img {
   color: var(--white);
   list-style: none;
   justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.category-item {
+  padding: 20px 0 21px 23px;
+}
+
+.category-item > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .category-item h3 {
@@ -386,6 +409,17 @@ img {
   padding: 0;
 }
 
+.slider-top {
+  min-height: 105px;
+}
+
+.slider-top .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 23px 0 17px 24px;
+}
+
 .slider-item h3 {
   padding: 0;
   margin: 0;
@@ -394,9 +428,11 @@ img {
   font-weight: 700;
   color: var(--white);
   text-transform: uppercase;
+  margin-bottom: 5px;
 }
 
 .slider-item p {
+  margin: 0;
   color: var(--white);
 }
 
@@ -450,18 +486,18 @@ img {
 
 /* Popular products */
 
-.products-header {
-  background-color: var(--merino);
+.popular-products {
+  margin-bottom: 70px;
 }
 
 .button {
   font-size: 14px;
   line-height: 18px;
-  text-align: center;
   text-transform: uppercase;
   color: var(--white);
   background-color: var(--basic-red);
   border: none;
+  padding: 10px 24px;
 }
 
 .products-list {
@@ -489,11 +525,19 @@ img {
   flex-direction: column;
 }
 
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .product-item h3 {
   padding: 0;
   margin: 0;
   font-size: 18px;
   line-height: 20px;
+  font-weight: 700;
+  margin-bottom: 7px;
 }
 
 .product-item del {
@@ -507,6 +551,9 @@ img {
   line-height: 18px;
   color: var(--white);
   background-color: var(--basic-red);
+  margin: 0;
+  margin-top: 13px;
+  margin-bottom: 21px;
 }
 
 .buy-button {
@@ -552,8 +599,8 @@ img {
 
 /* Popular manufacturers */
 
-.manufacturers-header {
-  background-color: var(--merino);
+.popular-manufacturers {
+  margin-bottom: 70px;
 }
 
 .manufacturers-list {
@@ -562,12 +609,22 @@ img {
   grid-gap: 20px;
   justify-content: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
 }
 
 .manufacturer-item {
   background: var(--white);
   min-height: 143px;
   border: 1px solid var(--gallery);
+}
+
+.manufacturer-item a {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .manufacturer-item:hover,
@@ -583,9 +640,14 @@ img {
 /* Services */
 
 .services {
+  background-color: var(--basic-background);
+  padding-top: 60px;
+  margin-bottom: 70px;
+}
+
+.service-content {
   display: grid;
   grid-template-columns: 240px 1fr;
-  background-color: var(--basic-background);
 }
 
 .services-header {
@@ -640,7 +702,8 @@ img {
 
 .index-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 300px;
+  margin-bottom: 70px;
 }
 
 /* Company information */
@@ -1045,4 +1108,13 @@ img {
   color: var(--black);
   text-transform: uppercase;
   font-size: 14px;
+}
+
+.popular-top {
+  background-color: var(--merino);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 19px 26px 28px;
+  align-items: center;
 }
