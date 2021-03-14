@@ -218,7 +218,11 @@ img {
 }
 
 .contact-info a {
-  display: inline-block;
+  display: flex;
+  width: 264px;
+  height: 39px;
+  justify-content: center;
+  align-items: center;
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
@@ -267,7 +271,11 @@ img {
 }
 
 .account-user {
-  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 299px;
+  height: 45px;
 }
 
 .account-user a {
@@ -278,6 +286,16 @@ img {
 
 .account-user a:active {
   color: var(--basic-greylight);
+}
+
+.account-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+  gap: 30px
 }
 
 .user-button {
