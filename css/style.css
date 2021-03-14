@@ -93,11 +93,9 @@ img {
 }
 
 .header-menu > div {
-  height: inherit;
+  height: 100%;
   background-color: var(--basic-blue-dark);
   color: var(--basic-white);
-  width: 940px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
 }
@@ -196,8 +194,6 @@ img {
 }
 
 .header-container {
-  width: 940px;
-  margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 60px;
 }
@@ -452,7 +448,7 @@ img {
 }
 
 .slider-top {
-  min-height: 105px;
+  height: 105px;
 }
 
 .slider-top .wrapper {
@@ -827,7 +823,7 @@ img {
   padding-bottom: 55px;
 }
 
-.footer-menu > .container {
+.footer-menu .container {
   display: flex;
   justify-content: space-between;
 }
@@ -900,7 +896,7 @@ img {
   background-color: var(--pickled-bluewood-dark);
 }
 
-.footer-container > .container {
+.footer-container .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
