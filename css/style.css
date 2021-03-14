@@ -225,13 +225,30 @@ img {
   text-align: center;
 }
 
-.account-button {
-  display: inline-block;
+.account {
+  display: flex;
+  gap: 10px;
+  height: 45px;
+}
+
+.account a {
   font-size: 21px;
   line-height: 21px;
   color: var(--black);
   background-color: var(--white);
+  text-transform: inherit;
 }
+
+.account-button:nth-of-type(1) {
+  width: 121px;
+  height: 100%;
+}
+
+.account-button:nth-of-type(2) {
+  width: 150px;
+  height: 100%;
+}
+
 
 .account-button:hover,
 .account-button:focus {
@@ -350,14 +367,10 @@ img {
   font-weight: 700;
 }
 
-.category-button {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
+.category-item a {
   background-color: var(--trans-white);
   color: var(--white);
-  text-transform: uppercase;
+  width: 135px;
 }
 
 .category-button:hover,
@@ -515,7 +528,11 @@ img {
   color: var(--white);
   background-color: var(--basic-red);
   border: none;
-  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 192px;
 }
 
 .products-list {
@@ -744,6 +761,10 @@ img {
   color: var(--basic-red);
 }
 
+.company-info a {
+  width: 220px;
+}
+
 /* Contacts */
 
 .contacts h2 {
@@ -755,12 +776,16 @@ img {
   font-size: 13px;
 }
 
+.contacts a {
+  width: 100%;
+}
+
 /* Footer */
 
 .footer-logo {
   display: flex;
   width: 220px;
-  height: 68px;
+  height: 63px;
   align-items: center;
   justify-content: center;
 }
