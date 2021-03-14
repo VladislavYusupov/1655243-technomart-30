@@ -702,7 +702,16 @@ img {
   list-style: none;
 }
 
+.service-categories {
+  display: flex;
+  flex-direction: column;
+}
+
 .service-button {
+  font-family: 'Cuprum', sans-serif;
+  text-align: left;
+  height: 61px;
+  padding: 13.5px 22px 17.5px;
   font-weight: 700;
   font-size: 21px;
   line-height: 30px;
