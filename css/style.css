@@ -218,7 +218,11 @@ img {
 }
 
 .contact-info a {
-  display: inline-block;
+  display: flex;
+  width: 264px;
+  height: 39px;
+  justify-content: center;
+  align-items: center;
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
@@ -267,6 +271,11 @@ img {
 }
 
 .account-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 299px;
+  height: 45px;
   background-color: var(--white);
 }
 
@@ -278,6 +287,16 @@ img {
 
 .account-user a:active {
   color: var(--basic-greylight);
+}
+
+.account-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+  gap: 30px
 }
 
 .user-button {
@@ -574,6 +593,7 @@ img {
 .product-controls {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .product-info {
@@ -609,13 +629,11 @@ img {
 
 .buy-button {
   background-color: var(--basic-green);
-  border-radius: 2px;
   box-shadow: inset 0px -3px 0px var(--bilbao);
-  text-transform: uppercase;
-  color: var(--white);
-  font-size: 14px;
-  line-height: 18px;
   font-weight: 400;
+  margin-top: 38px;
+  margin-bottom: 10px;
+  width: 135px;
 }
 
 .buy-button:hover,
@@ -632,9 +650,7 @@ img {
   border-radius: 2px;
   color: var(--pickled-bluewood-light);
   background-color: var(--white);
-  text-transform: uppercase;
-  font-size: 14px;
-  line-height: 18px;
+  width: 135px;
 }
 
 .bookmarks-button:hover,
@@ -1008,14 +1024,16 @@ img {
   color: var(--pickled-bluewood-light);
   background-color: var(--basic-background);
   font-weight: 400;
-  grid-column: 1 / -1;
+  margin-bottom: 20px;
+  padding: 30px;
 }
 
 .breadcrumbs {
-  grid-column: 1 / -1;
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .breadcrumbs li {
@@ -1023,6 +1041,7 @@ img {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-right: 15px;
 }
 
 .breadcrumbs a {
@@ -1041,6 +1060,8 @@ img {
   line-height: 18px;
   font-weight: 400;
   background-color: var(--ecru-white);
+  margin: 0;
+  padding: 10px 18px;
 }
 
 .filter legend {
@@ -1076,6 +1097,9 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   border: 1px solid var(--mercury);
+  color: black;
+  width: 100%;
+  padding: 0;
 }
 
 .filter fieldset {
@@ -1086,20 +1110,27 @@ img {
 /* Sorting */
 
 .sort {
+  height: 38px;
+  margin-bottom: 28px;
+  background-color: var(--ecru-white);
+}
+
+.sort-wrapper {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 18px;
   font-weight: 400;
+  padding: 10px 14px 10px 18px;
 }
 
 .sort h2 {
+  margin: 0;
   font-size: inherit;
   font-weight: inherit;
   text-transform: uppercase;
-  background-color: var(--ecru-white);
+  margin-right: 140px;
 }
 
 .sorting-controls {
@@ -1110,6 +1141,16 @@ img {
 .sort-list {
   display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sort-item {
+  margin-right: 65px;
+}
+
+.sort-item:last-child {
+  margin-right: 45px;
 }
 
 .sort-item button {
@@ -1117,9 +1158,10 @@ img {
   border: none;
   line-height: 18px;
   color: var(--trans-black);
-  background-color: var(--white);
+  background-color: transparent;
   text-transform: uppercase;
   text-decoration: underline dotted var(--basic-red);
+  padding: 0;
 }
 
 .sort-item button:hover,
@@ -1141,6 +1183,7 @@ img {
 }
 
 .icon-asc {
+  margin-right: 21px;
   background-image: url("../img/icons/sort/rest-sort-asc-icon.svg");
 }
 
@@ -1172,6 +1215,15 @@ img {
 
 .pagination-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 48px;
+  display: flex;
+  gap: 10px
+}
+
+.pagination-item:last-child {
+  width: 140px;
 }
 
 .pagination-item a {
@@ -1181,6 +1233,16 @@ img {
   color: var(--black);
   border: 1px solid var(--mercury);
   border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+}
+
+.pagination-item:last-child a {
+  text-transform: uppercase;
+  width: 138px;
 }
 
 .pagination-item a:hover,
@@ -1196,7 +1258,7 @@ img {
 .pagination-item-current a:hover,
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
-  border: none;
+  border: 1px solid var(--basic-red);
   color: var(--white);
   background-color: var(--basic-red);
 }
@@ -1205,6 +1267,8 @@ img {
 
 .about-punchers {
   background-color: var(--basic-background);
+  margin-top: 59px;
+  padding: 64px 0 68px;
 }
 
 .about-punchers h2 {
@@ -1212,14 +1276,46 @@ img {
   line-height: 30px;
   font-weight: inherit;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
 }
 
 .about-punchers p {
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
+  padding: 0;
+  margin: 0;
 }
 
 /* Notification modal */
+
+.notification-modal {
+  width: 620px;
+  background-color: var(--white);
+}
+
+.modal-message {
+  display: flex;
+  align-items: center;
+  padding: 49px 0;
+  gap: 30px;
+  padding-left: 81px;
+}
+
+.modal-actions {
+  background-color: var(--basic-background);
+  display: flex;
+  justify-content: center;
+  padding: 37px 0;
+  gap: 10px;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
 .notification-modal b {
   font-size: 24px;
@@ -1228,6 +1324,5 @@ img {
 
 .continue-shopping-button {
   color: var(--black);
-  text-transform: uppercase;
-  font-size: 14px;
+  background-color: var(--white);
 }
