@@ -107,6 +107,8 @@ img {
 }
 
 .header-menu input {
+  width: 100%;
+  padding: 9px 18px 9px 42px;
   background-color: transparent;
   border: none;
   color: var(--white);
@@ -127,12 +129,28 @@ img {
 
 .header-menu form {
   position: relative;
+  display: flex;
+  height: 100%;
+  width: 270px;
 }
 
 .technomart-logo {
+  position: relative;
+  display: flex;
+  width: 220px;
+  height: 100%;
+  justify-content: center;
   line-height: 13px;
   background-color: var(--basic-red);
-  box-shadow: inset 0px -5px 0px var(--black-shadow);
+}
+
+.technomart-logo::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  background-color: var(--error);
+  width: 100%;
+  height: 5px;
 }
 
 .basket {
@@ -1174,4 +1192,12 @@ img {
   justify-content: space-between;
   padding: 25px 19px 26px 28px;
   align-items: center;
+}
+
+.header-menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 100%;
 }
