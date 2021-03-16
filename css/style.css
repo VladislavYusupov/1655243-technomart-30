@@ -777,10 +777,17 @@ img {
   align-items: center;
 }
 
+.product-card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .product-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 18px 21px 18px;
 }
 
 .product-item-new {
@@ -792,11 +799,13 @@ img {
   color: var(--white);
   text-transform: uppercase;
   position: absolute;
-  top: 10px;
+  top: 8px;
   right: -27px;
   width: 100px;
-  text-align: center;
-  padding: 6px 0;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: rotate(45deg);
 }
 
@@ -813,6 +822,7 @@ img {
   font-size: 17px;
   line-height: 18px;
   color: var(--basic-greylight);
+  padding-bottom: 13px;
 }
 
 .product-item p {
@@ -843,6 +853,8 @@ img {
   white-space: nowrap;
   width: 141px;
   height: 38px;
+  margin-left: 11px;
+  border-radius: 3px;
   box-sizing: border-box;
 }
 
@@ -938,8 +950,10 @@ img {
 
 .services {
   background-color: var(--basic-background);
-  padding-top: 60px;
+  padding-top: 64px;
   margin-bottom: 70px;
+  height: 522px;
+  box-sizing: border-box;
 }
 
 .service-content {
@@ -951,6 +965,10 @@ img {
   grid-column: 1 / -1;
 }
 
+.services-header .section-header {
+  margin-bottom: 25px;
+}
+
 .services h2 {
   color: black;
 }
@@ -958,6 +976,7 @@ img {
 .services p {
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
+  margin: 0;
 }
 
 .service-list {
@@ -1023,6 +1042,7 @@ img {
 
 .service-item:nth-child(1) {
   background-image: url(../img/delivery.png);
+  background-position: right 1px top 23px;
 }
 
 .service-item h3 {
@@ -1033,18 +1053,31 @@ img {
   color: var(--pickled-bluewood-light);
   text-transform: uppercase;
   font-weight: 400;
+  margin-bottom: 30px;
 }
 
 .index-columns {
   display: grid;
+  height: 356px;
   grid-template-columns: 1fr 300px;
   margin-bottom: 70px;
 }
 
+.index-columns p {
+  margin: 0;
+}
+
 /* Company information */
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 .company-info h2 {
   color: var(--black);
+  margin-bottom: 24px;
 }
 
 .company-info p {
@@ -1052,10 +1085,16 @@ img {
   font-size: 13px;
 }
 
+.company-text {
+  padding-bottom: 26px;
+}
+
 .company-partners {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 1px;
+  margin-bottom: auto;
 }
 
 .partner-item {
@@ -1081,13 +1120,25 @@ img {
 
 /* Contacts */
 
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .contacts h2 {
   color: var(--black);
+  margin-bottom: 24px;
 }
 
 .contacts p {
   font-family: "PT Sans";
   font-size: 13px;
+  margin-bottom: 32px;
+}
+
+.contacts img {
+  margin-bottom: auto;
 }
 
 .contacts a {
@@ -1097,7 +1148,7 @@ img {
 /* Footer */
 
 .footer-logo {
-  height: 63px;
+  height: 68px;
   box-shadow: inset 0 -5px 0 var(--black-shadow);
 }
 
@@ -1105,6 +1156,7 @@ img {
   margin: 0;
   padding: 0;
   margin-top: 22px;
+  margin-left: 3px;
 }
 
 .footer-menu {
@@ -1129,7 +1181,7 @@ img {
 }
 
 .footer-navigation ul:last-child {
-  padding-left: 22px;
+  padding-left: 30px;
   margin-top: 34px;
 }
 
@@ -1158,6 +1210,9 @@ img {
 }
 
 .footer-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   padding-top: 37px;
 }
 
@@ -1193,12 +1248,14 @@ img {
 }
 
 .footer-container p {
+  margin: 0;
   font-size: 16px;
   line-height: 18px;
   color: var(--white);
 }
 
 .footer-social {
+  margin-right: 25px;
   justify-self: center;
 }
 
