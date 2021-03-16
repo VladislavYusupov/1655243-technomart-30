@@ -104,9 +104,13 @@ img {
   color: var(--white);
 }
 
-.header-menu input {
+.search {
+  display: flex;
+  align-items: center;
   width: 100%;
-  padding: 9px 18px 9px 42px;
+  height: 100%;
+  padding: 0;
+  padding-left: 42px;
   background-color: transparent;
   border: none;
   color: var(--white);
@@ -116,48 +120,41 @@ img {
   background-position: center left 19px;
 }
 
-.header-menu input::before {
-  content: '';
-  position: absolute;
-  left: 26px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-image: url(../img/icons/search-icon.svg);
-  width: 17px;
-  height: 17px;
-  opacity: .3;
-}
-
-.header-menu input:hover {
+.search:hover {
   background-image: url(../img/icons/white-search-icon.svg);
 }
 
-.header-menu input:focus {
+.search:focus {
+  outline: none;
   color: var(--black);
   background-color: var(--white);
   background-image: url(../img/icons/red-search-icon.svg);
 }
 
-.header-menu input::placeholder {
+.search::placeholder {
   color: var(--white);
 }
 
-.header-menu input:focus::placeholder {
+.search:focus::placeholder {
   color: var(--black);
 }
 
 .header-menu form {
-  position: relative;
-  display: flex;
   height: 100%;
   width: 270px;
 }
 
-.bookmarks {
+.menu-item-wrapper {
   width: 150px;
-  box-sizing: border-box;
-  padding: 9px 24px 9px 43px;
+  height: 100%;
+}
+
+.bookmarks {
+  display: flex;
   position: relative;
+  height: 100%;
+  padding-left: 43px;
+  align-items: center;
 }
 
 .bookmarks::before {
@@ -212,10 +209,11 @@ img {
 }
 
 .basket {
-  width: 150px;
-  box-sizing: border-box;
-  padding: 9px 26px 9px 49px;
+  display: flex;
   position: relative;
+  height: 100%;
+  padding-left: 49px;
+  align-items: center;
   background-color: var(--basic-red);
 }
 
