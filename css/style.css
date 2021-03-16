@@ -831,6 +831,38 @@ img {
   width: 135px;
 }
 
+.product-price {
+  line-height: 18px;
+  color: var(--white);
+  background-color: var(--basic-red);
+  padding: 10px 44px 10px 32px;
+  position: relative;
+  white-space: nowrap;
+  width: 141px;
+  height: 38px;
+  box-sizing: border-box;
+}
+
+.product-price::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 10px solid transparent;
+  border-top: 10px solid var(--white);
+  border-right: 10px solid var(--white);
+}
+
+.product-price::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: 10px solid transparent;
+  border-bottom: 10px solid var(--white);
+  border-right: 10px solid var(--white);
+}
+
 .buy-button:hover,
 .buy-button:focus {
   background-color: var(--success);
