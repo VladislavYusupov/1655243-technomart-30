@@ -80,6 +80,29 @@ img {
   margin: 0 auto;
 }
 
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--basic-red);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 192px;
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--brick-red);
+}
+
+.button:active {
+  background-color: var(--tall-poppy);
+}
+
 /* Header */
 
 .main-header {
@@ -387,10 +410,12 @@ img {
 
 .account-button:hover,
 .account-button:focus {
+  background-color: var(--white);
   color: var(--basic-red);
 }
 
 .account-button:active {
+  background-color: var(--white);
   color: var(--basic-greylight);
 }
 
@@ -724,29 +749,6 @@ img {
   justify-content: space-between;
   padding: 25px 19px 26px 28px;
   align-items: center;
-}
-
-.button {
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: var(--white);
-  background-color: var(--basic-red);
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 38px;
-  width: 192px;
-}
-
-.button:hover,
-.button:focus {
-  background-color: var(--brick-red);
-}
-
-.button:active {
-  background-color: var(--tall-poppy);
 }
 
 .products-list {
