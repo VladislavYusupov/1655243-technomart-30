@@ -26,10 +26,14 @@
           <img src="img/icons/technomart.svg" width="108" height="18" alt="Логотип магазина «Техномарт»">
         </a>
         <form action="#" method="GET">
-          <input type="search" placeholder="Поиск:">
+          <input type="search" class="search" placeholder="Поиск:">
         </form>
-        <a href="#" class="bookmarks header-menu-item">Закладки: 0</a>
-        <a href="#" class="basket header-menu-item">Корзина: 10</a>
+        <div class="menu-item-wrapper">
+          <a href="#" class="bookmarks">Закладки: 0</a>
+        </div>
+        <div class="menu-item-wrapper">
+          <a href="#" class="basket basket--empty">Корзина: 0</a>
+        </div>
         <a href="#" class="button-order header-menu-item">Оформить заказ</a>
       </div>
     </div>
@@ -42,7 +46,9 @@
           и инструментов для ремона
         </i>
         <section class="contact-info">
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <div>
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          </div>
           <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </section>
         <section class="authorized-user">
@@ -185,22 +191,26 @@
 
           <ul class="products-list">
             <li class="product-item">
-              <img src="img/hammer-drill-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+              <div class="product-card-image">
+                <img src="img/hammer-drill-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+              </div>
               <div class="product-info">
                 <h3>Перфоратор BOSCH BFG 6000</h3>
                 <del>30500 Р.</del>
-                <p>25500 Р.</p>
+                <span class="product-price">25500 Р.</span>
               </div>
             </li>
             <li class="product-item">
-              <img src="img/hammer-drill-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+              <div class="product-card-image">
+                <img src="img/hammer-drill-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+              </div>
               <div class="product-info">
                 <h3>Перфоратор BOSCH BFG 6000</h3>
                 <del>30500 Р.</del>
-                <p>25500 Р.</p>
+                <span class="product-price">25500 Р.</span>
               </div>
             </li>
-            <li class="product-item item-new">
+            <li class="product-item">
               <div class="product-controls">
                 <a href="#" class="buy-button button">Купить</a>
                 <button type="button" class="bookmarks-button button">В закладки</button>
@@ -208,54 +218,71 @@
               <div class="product-info">
                 <h3>Перфоратор BOSCH BFG 6000</h3>
                 <del>30500 Р.</del>
-                <p>25500 Р.</p>
+                <span class="product-price">25500 Р.</span>
               </div>
+              <span class="product-item-new">new</span>
             </li>
-            <li class="product-item item-new">
-              <img src="img/hammer-drill-bosch-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+            <li class="product-item">
+              <div class="product-card-image">
+                <img src="img/hammer-drill-bosch-bfg-3000.jpg" width="140" height="112" alt="Перфоратор BOSCH BFG 3000">
+              </div>
               <div class="product-info">
                 <h3>Перфоратор BOSCH BFG 3000</h3>
                 <del>22500 Р.</del>
-                <p>15500 Р.</p>
+                <span class="product-price">15500 Р.</span>
               </div>
+              <span class="product-item-new">new</span>
             </li>
             <li class="product-item">
-              <img src="img/hammer-drill-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+              <div class="product-card-image">
+                <img src="img/hammer-drill-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+              </div>
               <div class="product-info">
                 <h3>Перфоратор BOSCH BFG 6000</h3>
                 <del>30500 Р.</del>
-                <p>25500 Р.</p>
+                <span class="product-price">25500 Р.</span>
               </div>
             </li>
-            <li class="product-item item-new">
-              <img src="img/hammer-drill-bosch-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+            <li class="product-item">
+              <div class="product-card-image">
+                <img src="img/hammer-drill-bosch-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+              </div>
               <div class="product-info">
                 <h3>Перфоратор BOSCH BFG 2000</h3>
-                <p>12500 Р.</p>
+                <span class="product-price">12500 Р.</span>
               </div>
+              <span class="product-item-new">new</span>
             </li>
-            <li class="product-item item-new">
-              <img src="img/hammer-drill-bosch-bfg-3000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+            <li class="product-item">
+              <div class="product-card-image">
+                <img src="img/hammer-drill-bosch-bfg-3000.jpg" width="140" height="112" alt="Перфоратор BOSCH BFG 3000">
+              </div>
               <div class="product-info">
                 <h3>Перфоратор BOSCH BFG 3000</h3>
                 <del>22500 Р.</del>
-                <p>15500 Р.</p>
+                <span class="product-price">15500 Р.</span>
               </div>
+              <span class="product-item-new">new</span>
             </li>
             <li class="product-item">
-              <img src="img/hammer-drill-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+              <div class="product-card-image">
+                <img src="img/hammer-drill-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+              </div>
               <div class="product-info">
                 <h3>Перфоратор BOSCH BFG 6000</h3>
                 <del>30500 Р.</del>
-                <p>25500 Р.</p>
+                <span class="product-price">25500 Р.</span>
               </div>
             </li>
-            <li class="product-item item-new">
-              <img src="img/hammer-drill-bosch-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+            <li class="product-item">
+              <div class="product-card-image">
+                <img src="img/hammer-drill-bosch-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
+              </div>
               <div class="product-info">
                 <h3>Перфоратор BOSCH BFG 2000</h3>
-                <p>12500 Р.</p>
+                <span class="product-price">12500 Р.</span>
               </div>
+              <span class="product-item-new">new</span>
             </li>
           </ul>
 
