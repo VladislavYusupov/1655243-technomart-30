@@ -1318,7 +1318,7 @@ img {
 .feedback-modal {
   margin-top: 10px;
   width: 620px;
-  height: 430px;
+  height: 423px;
   position: relative;
 }
 
@@ -1336,12 +1336,19 @@ img {
   margin: 0;
 }
 
+.feedback-modal form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .modal-close {
   background: none;
   border: none;
   position: absolute;
-  top: 14px;
-  right: 11px;
+  top: 13px;
+  right: 5px;
   cursor: pointer;
 }
 
@@ -1388,7 +1395,6 @@ img {
 .form-submit {
   background-color: var(--basic-background);
   padding: 37px 80px;
-  margin-top: 39px;
 }
 
 .submit-button {
@@ -1397,6 +1403,39 @@ img {
   margin: 0 auto;
   cursor: pointer;
   padding: 0;
+  outline: none;
+}
+
+/* Map modal */
+
+.map-modal {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  width: 929px;
+  height: 449px;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.map-modal::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background-color: var(--basic-red);
+}
+
+.map-modal img {
+  max-height: 100%;
+}
+
+.map-modal .modal-close {
+  padding: 0;
+  top: 10px;
+  right: 9px;
 }
 
 /* Catalog page */
