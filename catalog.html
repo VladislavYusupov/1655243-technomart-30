@@ -118,47 +118,57 @@
           <h2>Фильтр: </h2>
 
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
-              <legend>Цена:</legend>
-              <input type="range" min="0" max="50000" step="1" value="75">
-              <input type="text" class="filter-input" value="0">
-              <span>-</span>
-              <input type="text" class="filter-input" value="30000">
+            <fieldset class="filter-block">
+              <legend class="filter-block-name">Цена:</legend>
+              <div class="range-filter">
+                <div class="range-slider">
+                  <div class="scale">
+                    <div class="bar" style="width: 70%; margin-left: 0%"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0" style="left: 5%"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: 60%"></div>
+                </div>
+                <div class="range-price">
+                  <input type="text" name="min-price" value="0">
+                  —
+                  <input type="text" name="max-price" value="30000">
+                </div>
+              </div>
             </fieldset>
-            <fieldset>
-              <legend>Производители:</legend>
+            <fieldset class="filter-block">
+              <legend class="filter-block-name">Производители:</legend>
               <ul>
                 <li class="filter-checkbox">
-                  <input type="checkbox" name="bosch" id="filter-bosch" value="Bosch" checked>
+                  <input class="visually-hidden" type="checkbox" name="bosch" id="filter-bosch" value="Bosch" checked>
                   <label for="filter-bosch">Bosch</label>
                 </li>
                 <li class="filter-checkbox">
-                  <input type="checkbox" name="interscol" id="filter-interscol" value="Интерскол">
+                  <input class="visually-hidden" type="checkbox" name="interscol" id="filter-interscol" value="Интерскол">
                   <label for="filter-interscol">Интерскол</label>
                 </li>
                 <li class="filter-checkbox">
-                  <input type="checkbox" name="makita" id="filter-makita" value="Makita" checked>
+                  <input class="visually-hidden" type="checkbox" name="makita" id="filter-makita" value="Makita" checked>
                   <label for="filter-makita">Makita</label>
                 </li>
                 <li class="filter-checkbox">
-                  <input type="checkbox" name="dewalt" id="filter-dewalt" value="Dewalt">
+                  <input class="visually-hidden" type="checkbox" name="dewalt" id="filter-dewalt" value="Dewalt">
                   <label for="filter-dewalt">Dewalt</label>
                 </li>
                 <li class="filter-checkbox">
-                  <input type="checkbox" name="hitachi" id="filter-hitachi" value="Hitachi">
+                  <input class="visually-hidden" type="checkbox" name="hitachi" id="filter-hitachi" value="Hitachi">
                   <label for="filter-hitachi">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
-              <legend>Питание:</legend>
+            <fieldset class="filter-block">
+              <legend class="filter-block-name">Питание:</legend>
               <ul>
                 <li class="filter-radio">
-                  <input type="radio" name="rechargable" value="Аккумуляторные" id="filter-rechargable" checked>
+                  <input class="visually-hidden" type="radio" name="rechargable" value="Аккумуляторные" id="filter-rechargable" checked>
                   <label for="filter-rechargable">Аккумуляторные</label>
                 </li>
                 <li class="filter-radio">
-                  <input type="radio" name="network" value="Сетевые" id="filter-network">
+                  <input class="visually-hidden" type="radio" name="network" value="Сетевые" id="filter-network">
                   <label for="filter-network">Сетевые</label>
                 </li>
               </ul>
