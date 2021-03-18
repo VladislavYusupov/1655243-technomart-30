@@ -427,19 +427,55 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   width: 299px;
   height: 45px;
   background-color: var(--white);
 }
 
-.account-user a {
+.account-username {
   color: var(--black);
   font-size: 21px;
   line-height: 21px;
 }
 
-.account-user a:active {
+.account-username:active {
   color: var(--basic-greylight);
+}
+
+.account-user::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  width: 20px;
+  height: 18px;
+  background-image: url(../img/icons/user-icon.svg);
+}
+
+.account-user:hover::before {
+  background-image: url(../img/icons/blue-user-icon.svg);
+}
+
+.account-user:active::before {
+  opacity: 0.3;
+}
+
+.account-menu-item:last-child {
+  position: relative;
+}
+
+.account-menu-item:last-child::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -16px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--pickled-bluewood-light);
 }
 
 .account-menu {
@@ -1475,12 +1511,32 @@ img {
   margin-bottom: 20px;
 }
 
-.breadcrumbs li {
+.breadcrumbs-item {
   font-family: "PT Sans", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   margin-right: 15px;
+  position: relative;
+  padding-right: 23px;
+}
+
+.breadcrumbs-item:first-child a {
+  display: block;
+  width: 14px;
+  height: 12px;
+  background-image: url(../img/icons/home-icon.svg);
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-54%);
+  right: 0;
+  background-image: url(../img/icons/breadcrumbs-right-icon.svg);
+  width: 8px;
+  height: 12px;
 }
 
 .breadcrumbs a {
@@ -1876,8 +1932,26 @@ img {
 /* Notification modal */
 
 .notification-modal {
+  margin-top: 10px;
+  position: relative;
   width: 620px;
+  height: 275px;
   background-color: var(--white);
+}
+
+.notification-modal::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background-color: var(--basic-red);
+}
+
+.notification-modal .modal-close {
+  top: 11px;
+  right: 11px;
 }
 
 .modal-message {
