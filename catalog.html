@@ -115,18 +115,21 @@
 
       <div class="catalog-wrapper">
         <section class="filters">
-          <h2>Фильтр: </h2>
+          <div class="filter-header">
+            <h2>Фильтр: </h2>
+          </div>
+
 
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset class="filter-block">
+            <fieldset class="filter-block price-filter">
               <legend class="filter-block-name">Цена:</legend>
               <div class="range-filter">
-                <div class="range-slider">
+                <div class="range-controls">
                   <div class="scale">
-                    <div class="bar" style="width: 70%; margin-left: 0%"></div>
+                    <div class="bar" style="width: 152px; margin-left: 0%"></div>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0" style="left: 5%"></div>
-                  <div class="toggle toggle-max" tabindex="0" style="left: 60%"></div>
+                  <div class="toggle toggle-min" tabindex="0" style="left: 18px"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: 160px"></div>
                 </div>
                 <div class="range-price">
                   <input type="text" name="min-price" value="0">
@@ -135,7 +138,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="filter-block">
+            <fieldset class="filter-block manufacturers-filter">
               <legend class="filter-block-name">Производители:</legend>
               <ul>
                 <li class="filter-checkbox">
@@ -160,7 +163,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-block">
+            <fieldset class="filter-block nutrition-filter">
               <legend class="filter-block-name">Питание:</legend>
               <ul>
                 <li class="filter-radio">
