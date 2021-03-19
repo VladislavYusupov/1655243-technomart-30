@@ -431,19 +431,10 @@ img {
   width: 299px;
   height: 45px;
   background-color: var(--white);
+  cursor: pointer;
 }
 
-.account-username {
-  color: var(--black);
-  font-size: 21px;
-  line-height: 21px;
-}
-
-.account-username:active {
-  color: var(--basic-greylight);
-}
-
-.account-user::before {
+.account-profile {
   content: '';
   position: absolute;
   top: 50%;
@@ -454,12 +445,43 @@ img {
   background-image: url(../img/icons/user-icon.svg);
 }
 
-.account-user:hover::before {
+.account-logout {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 17px;
+  width: 20px;
+  height: 17px;
+  background-image: url(../img/icons/logout-icon.svg);
+}
+
+.account-user:hover .account-profile,
+.account-user:focus .account-profile {
   background-image: url(../img/icons/blue-user-icon.svg);
 }
 
-.account-user:active::before {
+.account-user:hover .account-logout,
+.account-user:focus .account-logout {
+  background-image: url(../img/icons/blue-logout-icon.svg);
+}
+
+.account-user:active .account-profile {
   opacity: 0.3;
+}
+
+.account-user:active .account-logout {
+  opacity: 0.3;
+}
+
+.account-username {
+  color: var(--black);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.account-username:active {
+  color: var(--basic-greylight);
 }
 
 .account-menu-item:last-child {
