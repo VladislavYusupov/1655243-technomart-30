@@ -830,8 +830,8 @@ img {
   background-color: var(--white);
   border: 1px solid var(--gallery);
   display: grid;
-  grid-template-rows: 1fr min-content;
-  min-height: 316px;
+  grid-template-rows: 1fr 140px;
+  height: 316px;
   position: relative;
   overflow: hidden;
 }
@@ -880,7 +880,7 @@ img {
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
-  margin-bottom: 7px;
+  margin-bottom: auto;
 }
 
 .product-item del {
@@ -900,13 +900,42 @@ img {
   margin-bottom: 21px;
 }
 
-.buy-button {
-  background-color: var(--basic-green);
-  box-shadow: inset 0px -3px 0px var(--bilbao);
-  font-weight: 400;
+.buy-button-wrapper {
   margin-top: 38px;
   margin-bottom: 10px;
   width: 135px;
+}
+
+.buy-button {
+  position: relative;
+  font-family: "Cuprum", sans-serif;
+  background-color: var(--basic-green);
+  box-shadow: inset 0px -3px 0px var(--bilbao);
+  font-weight: 400;
+  width: auto;
+  padding-left: 53px;
+  justify-content: flex-start;
+}
+
+.buy-button::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-53%);
+  background-image: url(../img/icons/cart-icon.svg);
+  width: 15px;
+  height: 15px;
+  opacity: 0.3;
+}
+
+.buy-button:hover::before,
+.buy-button:focus::before {
+  opacity: 0.3;
+}
+
+.buy-button:active::before {
+  opacity: 0.3;
 }
 
 .product-price {
@@ -953,6 +982,7 @@ img {
 }
 
 .bookmarks-button {
+  font-family: "Cuprum", sans-serif;
   border: 3px solid var(--basic-green);
   border-radius: 2px;
   color: var(--pickled-bluewood-light);
