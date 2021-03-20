@@ -2029,39 +2029,48 @@ img {
   text-decoration: none;
 }
 
-.sort-icon {
+.sort-directions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 43px;
+}
+
+.sort-button {
   display: inline-block;
   width: 11px;
   height: 10px;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
-.icon-asc {
-  margin-right: 21px;
-  background-image: url("../img/icons/sort/rest-sort-asc-icon.svg");
+.asc-sort-button {
+  background-image: url(../img/icons/sort/rest-sort-asc-icon.svg);
 }
 
-.icon-asc:hover,
-.icon-asc:focus {
-  outline: none;
-  background-image: url("../img/icons/sort/hover-sort-asc-icon.svg");
+.asc-sort-button:hover,
+.asc-sort-button:focus {
+  background-image: url(../img/icons/sort/hover-sort-asc-icon.svg);
 }
 
-.icon-asc:active {
-  background-image: url("../img/icons/sort/active-sort-asc-icon.svg");
+.asc-sort-button:active,
+.asc-sort-button--active {
+  background-image: url(../img/icons/sort/active-sort-asc-icon.svg);
 }
 
-.icon-desc {
-  background-image: url("../img/icons/sort/rest-sort-desc-icon.svg");
+.desc-sort-button {
+  background-image: url(../img/icons/sort/rest-sort-desc-icon.svg);
 }
 
-.icon-desc:hover,
-.icon-desc:focus {
-  outline: none;
-  background-image: url("../img/icons/sort/hover-sort-desc-icon.svg");
+.desc-sort-button:hover,
+.desc-sort-button:focus {
+  background-image: url(../img/icons/sort/hover-sort-desc-icon.svg);
 }
 
-.icon-desc:active {
-  background-image: url("../img/icons/sort/active-sort-desc-icon.svg");
+.desc-sort-button:active {
+  background-image: url(../img/icons/sort/active-sort-desc-icon.svg);
 }
 
 /* Pagination */
