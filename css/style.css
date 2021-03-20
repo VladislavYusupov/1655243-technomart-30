@@ -175,8 +175,8 @@ img {
   width: 270px;
 }
 
-.menu-item-wrapper {
-  width: 150px;
+.header-bookmarks-wrapper {
+  width: 164px;
   height: 100%;
 }
 
@@ -239,11 +239,16 @@ img {
   height: 5px;
 }
 
+.header-basket-wrapper {
+  width: 136px;
+  height: 100%;
+}
+
 .basket {
   display: flex;
   position: relative;
   height: 100%;
-  padding-left: 49px;
+  padding-left: 35px;
   align-items: center;
   background-color: var(--basic-red);
 }
@@ -260,7 +265,7 @@ img {
 .basket::before {
   content: '';
   position: absolute;
-  left: 26px;
+  left: 12px;
   top: 50%;
   transform: translateY(-53%);
   background-image: url(../img/icons/cart-icon.svg);
@@ -321,6 +326,10 @@ img {
   margin-left: 25px;
   margin-top: 3px;
   gap: 3px
+}
+
+.inner-page .contact-info {
+  margin-left: 53px;
 }
 
 .contact-info div {
@@ -432,6 +441,7 @@ img {
   height: 45px;
   background-color: var(--white);
   cursor: pointer;
+  margin-top: 3px;
 }
 
 .account-profile {
@@ -493,7 +503,7 @@ img {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: -16px;
+  left: -17.5px;
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -504,7 +514,7 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-top: 7px;
+  margin-top: 4px;
   display: flex;
   justify-content: center;
   gap: 30px
