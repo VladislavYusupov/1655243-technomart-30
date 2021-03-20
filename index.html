@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet"
@@ -28,10 +28,10 @@
         <form action="#" method="GET">
           <input type="search" class="search" placeholder="Поиск:">
         </form>
-        <div class="menu-item-wrapper">
+        <div class="header-bookmarks-wrapper">
           <a href="#" class="bookmarks">Закладки: 0</a>
         </div>
-        <div class="menu-item-wrapper">
+        <div class="header-basket-wrapper">
           <a href="#" class="basket basket--empty">Корзина: 0</a>
         </div>
         <a href="#" class="button-order header-menu-item">Оформить заказ</a>
@@ -39,7 +39,7 @@
     </div>
 
     <div class="header-container container">
-      <div>
+      <div class="header-info">
         <i class="technomart-description">
           Интернет-магазин<br>
           строительных материалов<br>
@@ -168,6 +168,12 @@
         </div>
         <ul class="products-list">
           <li class="product-item">
+            <div class="product-controls">
+              <div class="buy-button-wrapper">
+                <a href="#" class="buy-button button">Купить</a>
+              </div>
+              <button type="button" class="bookmarks-button button">В закладки</button>
+            </div>
             <div class="product-card-image">
               <img src="img/hammer-drill-bosch-bfg-9000.jpg" width="186" height="164" alt="Перфоратор Bosch BFG 9000">
             </div>
@@ -178,6 +184,12 @@
             </div>
           </li>
           <li class="product-item">
+            <div class="product-controls">
+              <div class="buy-button-wrapper">
+                <a href="#" class="buy-button button">Купить</a>
+              </div>
+              <button type="button" class="bookmarks-button button">В закладки</button>
+            </div>
             <div class="product-card-image">
               <img src="img/hammer-drill-bosch-bfg-3000.jpg" width="140" height="112" alt="Перфоратор BOSCH BFG 3000">
             </div>
@@ -189,6 +201,12 @@
             <span class="product-item-new">new</span>
           </li>
           <li class="product-item">
+            <div class="product-controls">
+              <div class="buy-button-wrapper">
+                <a href="#" class="buy-button button">Купить</a>
+              </div>
+              <button type="button" class="bookmarks-button button">В закладки</button>
+            </div>
             <div class="product-card-image">
               <img src="img/hammer-drill-bosch-bfg-6000.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             </div>
@@ -199,6 +217,12 @@
             </div>
           </li>
           <li class="product-item">
+            <div class="product-controls">
+              <div class="buy-button-wrapper">
+                <a href="#" class="buy-button button">Купить</a>
+              </div>
+              <button type="button" class="bookmarks-button button">В закладки</button>
+            </div>
             <div class="product-card-image">
               <img src="img/hammer-drill-bosch-bfg-2000.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
             </div>
@@ -384,7 +408,7 @@
         <p>© 2010–2019 Компания «Техномарт»<br>
           Все права защищены</p>
         <section class="footer-social">
-          <ul>
+          <ul class="social-list">
             <li>
               <a href="#" class="social-button" title="Мы в Vk">
                 <img src="img/icons/vk-icon.svg" width="26" height="15" alt="Vk">
@@ -406,7 +430,7 @@
           <p class="footer-feedback">Обратная связь:<br>
             <a href="#">mail@htmlacademy.ru</a>
           </p>
-          <p class="footer-copyright">Разработано - <br>
+          <p class="footer-copyright">Разработано — <br>
             <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </section>
