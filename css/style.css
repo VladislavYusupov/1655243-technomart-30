@@ -302,7 +302,6 @@ img {
 }
 
 .header-container {
-  padding-top: 42.5px;
   padding-bottom: 60px;
 }
 
@@ -310,6 +309,12 @@ img {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+
+.header-info {
+  height: 158px;
+  padding-top: 42.5px;
+  box-sizing: border-box;
 }
 
 .technomart-description {
@@ -536,7 +541,6 @@ img {
 }
 
 .main-navigation {
-  margin-top: 40px;
   background-color: var(--pickled-bluewood-light);
   box-shadow: inset 0px -5px 0px var(--pickled-bluewood-dark);
 }
@@ -1566,7 +1570,7 @@ img {
   background-color: var(--basic-background);
   font-weight: 400;
   margin-bottom: 20px;
-  padding: 30px;
+  padding: 29px 0px 30px 30px;
 }
 
 .breadcrumbs {
@@ -1703,10 +1707,12 @@ img {
 }
 
 .price-filter {
+  height: 168px;
   margin-bottom: 16px;
 }
 
 .manufacturers-filter {
+  height: 224px;
   margin-bottom: 18px;
 }
 
@@ -1865,7 +1871,7 @@ img {
 }
 
 .power-filter-item {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   padding-left: 35px;
 }
 
