@@ -958,16 +958,19 @@ img {
   color: var(--pickled-bluewood-light);
   background-color: var(--white);
   width: 135px;
+  cursor: pointer;
 }
 
 .bookmarks-button:hover,
 .bookmarks-button:focus {
   outline: none;
+  background-color: var(--white);
   border: 3px solid var(--pickled-bluewood-light);
 }
 
 .bookmarks-button:active {
   color: var(--basic-greylight);
+  background-color: var(--white);
   border: 3px solid var(--basic-greylight);
 }
 
@@ -1641,6 +1644,13 @@ img {
   color: black;
   width: 100%;
   padding: 0;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
+  background-color: var(--white);
 }
 
 .filter-block {
@@ -1951,7 +1961,8 @@ img {
   text-decoration: underline var(--basic-red);
 }
 
-.sort-item button:active {
+.sort-item button:active,
+.sort-item--active button {
   color: var(--basic-red);
   text-decoration: none;
 }
