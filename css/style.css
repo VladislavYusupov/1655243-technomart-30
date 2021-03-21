@@ -2123,11 +2123,8 @@ img {
   margin-top: 48px;
   display: flex;
   gap: 10px;
-  flex-wrap: wrap
-}
-
-.pagination-item:last-child {
-  width: 140px;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .pagination-item a {
@@ -2140,13 +2137,14 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 36px;
-  height: 36px;
+  min-width: 38px;
+  min-height: 38px;
+  box-sizing: border-box;
 }
 
 .pagination-item:last-child a {
   text-transform: uppercase;
-  width: 138px;
+  min-width: 140px;
 }
 
 .pagination-item a:hover,
