@@ -116,16 +116,16 @@ img {
 }
 
 .header-menu {
-  height: 42px;
+  min-height: 42px;
   background-color: var(--pickled-bluewood-dark);
 }
 
 .header-menu > div {
-  height: 100%;
+  min-height: inherit;
   background-color: var(--basic-blue-dark);
   color: var(--basic-white);
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 
 .header-menu a {
@@ -145,7 +145,7 @@ img {
   position: relative;
   background-image: url(../img/icons/search-icon.svg);
   background-repeat: no-repeat;
-  background-position: top 12px left 17px;
+  background-position: center left 17px;
 }
 
 .search:hover {
@@ -172,13 +172,11 @@ img {
 }
 
 .header-menu form {
-  height: 100%;
   width: 270px;
 }
 
 .header-bookmarks-wrapper {
   width: 164px;
-  height: 100%;
 }
 
 .bookmarks {
@@ -215,13 +213,11 @@ img {
   align-items: center;
   justify-content: center;
   width: 150px;
-  height: 100%;
 }
 
 .technomart-logo {
   display: flex;
   width: 220px;
-  height: 100%;
   justify-content: center;
   line-height: 13px;
   background-color: var(--basic-red);
@@ -242,7 +238,6 @@ img {
 
 .header-basket-wrapper {
   width: 136px;
-  height: 100%;
 }
 
 .basket {
