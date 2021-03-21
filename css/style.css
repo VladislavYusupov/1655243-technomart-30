@@ -438,7 +438,7 @@ img {
   color: var(--basic-greylight);
 }
 
-.account-user {
+.user-account {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -450,7 +450,17 @@ img {
   margin-top: 3px;
 }
 
-.account-profile {
+.user-profile {
+  color: var(--black);
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.user-profile:active {
+  color: var(--basic-greylight);
+}
+
+.user-profile::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -461,7 +471,16 @@ img {
   background-image: url(../img/icons/user-icon.svg);
 }
 
-.account-logout {
+.user-profile:hover::before,
+.user-profile:focus::before {
+  background-image: url(../img/icons/blue-user-icon.svg);
+}
+
+.user-profile:active::before {
+  opacity: 0.3;
+}
+
+.logout {
   content: '';
   position: absolute;
   top: 50%;
@@ -472,32 +491,13 @@ img {
   background-image: url(../img/icons/logout-icon.svg);
 }
 
-.account-user:hover .account-profile,
-.account-user:focus .account-profile {
-  background-image: url(../img/icons/blue-user-icon.svg);
-}
-
-.account-user:hover .account-logout,
-.account-user:focus .account-logout {
+.logout:hover,
+.logout:focus {
   background-image: url(../img/icons/blue-logout-icon.svg);
 }
 
-.account-user:active .account-profile {
+.logout:active {
   opacity: 0.3;
-}
-
-.account-user:active .account-logout {
-  opacity: 0.3;
-}
-
-.account-username {
-  color: var(--black);
-  font-size: 21px;
-  line-height: 21px;
-}
-
-.account-username:active {
-  color: var(--basic-greylight);
 }
 
 .account-menu-item:last-child {
