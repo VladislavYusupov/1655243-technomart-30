@@ -856,11 +856,13 @@ img {
   filter: drop-shadow(0px 4px 20px var(--black-shadow));
 }
 
-.product-item:hover .product-card-image {
+.product-item:hover .product-card-image,
+.product-item:focus-within .product-card-image {
   display: none;
 }
 
-.product-item:hover .product-controls {
+.product-item:hover .product-controls,
+.product-item:focus-within .product-controls {
   display: flex;
 }
 
@@ -1276,8 +1278,13 @@ img {
   margin-bottom: 32px;
 }
 
-.contacts img {
+.contacts-map {
+  height: 158px;
   margin-bottom: auto;
+}
+
+.contacts-map img {
+  object-fit: cover;
 }
 
 .contacts a {
