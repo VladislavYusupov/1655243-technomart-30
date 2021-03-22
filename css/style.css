@@ -1738,6 +1738,10 @@ img {
   margin-bottom: 15px;
 }
 
+.filter-block input:focus + label {
+  outline: 2px solid black;
+}
+
 .price-filter {
   height: 168px;
   margin-bottom: 16px;

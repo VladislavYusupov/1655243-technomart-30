@@ -47,14 +47,15 @@
         </i>
         <section class="contact-info">
           <div>
-            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <a href="tel:+78125550555" aria-label="Номер телефона магазина: +7 (812) 555-05-55">+7 (812) 555-05-55</a>
           </div>
-          <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+          <span aria-label="Магазин находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">г.
+            Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
         </section>
         <section class="authorized-user">
           <div class="user-account">
-            <a href="#" class="user-profile">Равшан Джамшутович</a>
-            <span class="logout"></span>
+            <a href="#" class="user-profile" aria-label="Имя пользователя">Равшан Джамшутович</a>
+            <span class="logout" aria-label="Выйти из системы"></span>
           </div>
           <ul class="account-menu">
             <li class="account-menu-item">
@@ -99,7 +100,7 @@
     <div class="container">
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a href="index.html"></a>
+          <a href="index.html" aria-label="Главная"></a>
         </li>
         <li class="breadcrumbs-item">
           <a href="catalog.html">Каталог</a>
@@ -122,7 +123,6 @@
             <h2>Фильтр: </h2>
           </div>
 
-
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="filter-block price-filter">
               <legend class="filter-block-name">Цена:</legend>
@@ -135,9 +135,11 @@
                   <div class="toggle toggle-max" tabindex="0" style="left: 160px"></div>
                 </div>
                 <div class="range-price">
-                  <input type="text" name="min-price" value="0">
+                  <label class="visually-hidden" for="min-price">Минимальная цена</label>
+                  <input type="text" id="min-price" name="min-price" value="0">
                   —
-                  <input type="text" name="max-price" value="30000">
+                  <label class="visually-hidden" for="max-price">Максимальная цена</label>
+                  <input type="text" id="max-price" name="max-price" value="30000">
                 </div>
               </div>
             </fieldset>
@@ -207,14 +209,16 @@
                 </ul>
               </div>
               <div class="sort-directions">
-                <button class="sort-button asc-sort-button asc-sort-button--active"></button>
-                <button class="sort-button desc-sort-button"></button>
+                <button type="button" class="sort-button asc-sort-button asc-sort-button--active"
+                  aria-label="Отсортировать по возрастанию"></button>
+                <button type="button" class="sort-button desc-sort-button"
+                  aria-label="Отсортировать по убыванию"></button>
               </div>
             </div>
           </div>
 
           <ul class="products-list">
-            <li class="product-item">
+            <li class="product-item" tabindex="0">
               <div class="product-controls">
                 <div class="buy-button-wrapper">
                   <a href="#" class="buy-button button">Купить</a>
@@ -230,7 +234,7 @@
                 <span class="product-price">25500 Р.</span>
               </div>
             </li>
-            <li class="product-item">
+            <li class="product-item" tabindex="0">
               <div class="product-controls">
                 <div class="buy-button-wrapper">
                   <a href="#" class="buy-button button">Купить</a>
@@ -246,7 +250,7 @@
                 <span class="product-price">25500 Р.</span>
               </div>
             </li>
-            <li class="product-item new-item">
+            <li class="product-item new-item" tabindex="0">
               <div class="product-controls">
                 <div class="buy-button-wrapper">
                   <a href="#" class="buy-button button">Купить</a>
@@ -262,7 +266,7 @@
                 <span class="product-price">25500 Р.</span>
               </div>
             </li>
-            <li class="product-item new-item">
+            <li class="product-item new-item" tabindex="0">
               <div class="product-controls">
                 <div class="buy-button-wrapper">
                   <a href="#" class="buy-button button">Купить</a>
@@ -278,7 +282,7 @@
                 <span class="product-price">15500 Р.</span>
               </div>
             </li>
-            <li class="product-item">
+            <li class="product-item" tabindex="0">
               <div class="product-controls">
                 <div class="buy-button-wrapper">
                   <a href="#" class="buy-button button">Купить</a>
@@ -294,7 +298,7 @@
                 <span class="product-price">25500 Р.</span>
               </div>
             </li>
-            <li class="product-item new-item">
+            <li class="product-item new-item" tabindex="0">
               <div class="product-controls">
                 <div class="buy-button-wrapper">
                   <a href="#" class="buy-button button">Купить</a>
@@ -309,7 +313,7 @@
                 <span class="product-price">12500 Р.</span>
               </div>
             </li>
-            <li class="product-item new-item">
+            <li class="product-item new-item" tabindex="0">
               <div class="product-controls">
                 <div class="buy-button-wrapper">
                   <a href="#" class="buy-button button">Купить</a>
@@ -325,7 +329,7 @@
                 <span class="product-price">15500 Р.</span>
               </div>
             </li>
-            <li class="product-item">
+            <li class="product-item" tabindex="0">
               <div class="product-controls">
                 <div class="buy-button-wrapper">
                   <a href="#" class="buy-button button">Купить</a>
@@ -341,7 +345,7 @@
                 <span class="product-price">25500 Р.</span>
               </div>
             </li>
-            <li class="product-item new-item">
+            <li class="product-item new-item" tabindex="0">
               <div class="product-controls">
                 <div class="buy-button-wrapper">
                   <a href="#" class="buy-button button">Купить</a>
@@ -399,7 +403,9 @@
           <a href="index.html" class="technomart-logo footer-logo">
             <img src="img/icons/technomart.svg" width="138" height="23" alt="Логотип магазина «Техномарт»">
           </a>
-          <p class="footer-info">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          <p class="footer-info"
+            aria-label="Магазин находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8. Номер телефона +7 (812) 555-05-55">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             +7 (812) 555-05-55
           </p>
         </div>
@@ -447,17 +453,17 @@
         <section class="footer-social">
           <ul class="social-list">
             <li>
-              <a href="#" class="social-button" title="Мы в Vk">
+              <a href="#" class="social-button" aria-label="Вконтакте">
                 <img src="img/icons/vk-icon.svg" width="26" height="15" alt="Vk">
               </a>
             </li>
             <li>
-              <a href="#" class="social-button" title="Мы в Facebook">
+              <a href="#" class="social-button" aria-label="Фейсбук">
                 <img src="img/icons/fb-icon.svg" width="12" height="22" alt="Facebook">
               </a>
             </li>
             <li>
-              <a href="#" class="social-button" title="Мы в instagram">
+              <a href="#" class="social-button" aria-label="Инстаграм">
                 <img src="img/icons/instagram-icon.svg" width="21" height="21" alt="instagram">
               </a>
             </li>
@@ -465,7 +471,7 @@
         </section>
         <section class="footer-additional-info">
           <p class="footer-feedback">Обратная связь:<br>
-            <a href="#">mail@htmlacademy.ru</a>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p class="footer-copyright">Разработано — <br>
             <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
