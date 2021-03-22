@@ -155,7 +155,6 @@ img {
 }
 
 .search:focus {
-  outline: none;
   color: var(--black);
   background-color: var(--white);
   background-image: url(../img/icons/red-search-icon.svg);
@@ -857,11 +856,13 @@ img {
   filter: drop-shadow(0px 4px 20px var(--black-shadow));
 }
 
-.product-item:hover .product-card-image {
+.product-item:hover .product-card-image,
+.product-item:focus-within .product-card-image {
   display: none;
 }
 
-.product-item:hover .product-controls {
+.product-item:hover .product-controls,
+.product-item:focus-within .product-controls {
   display: flex;
 }
 
@@ -1008,7 +1009,6 @@ img {
 
 .bookmarks-button:hover,
 .bookmarks-button:focus {
-  outline: none;
   background-color: var(--white);
   border: 3px solid var(--pickled-bluewood-light);
 }
@@ -1138,7 +1138,6 @@ img {
 
 .service-button:hover,
 .service-button:focus {
-  outline: none;
   background: var(--pickled-bluewood-dark);
 }
 
@@ -1279,8 +1278,13 @@ img {
   margin-bottom: 32px;
 }
 
-.contacts img {
+.contacts-map {
+  height: 158px;
   margin-bottom: auto;
+}
+
+.contacts-map img {
+  object-fit: cover;
 }
 
 .contacts a {
@@ -1539,7 +1543,6 @@ img {
   margin: 0 auto;
   cursor: pointer;
   padding: 0;
-  outline: none;
 }
 
 /* Map modal */
@@ -2025,7 +2028,6 @@ img {
 
 .sort-item button:hover,
 .sort-item button:focus {
-  outline: none;
   color: var(--black);
   text-decoration: underline var(--basic-red);
 }

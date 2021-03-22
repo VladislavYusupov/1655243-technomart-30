@@ -26,7 +26,8 @@
           <img src="img/icons/technomart.svg" width="108" height="18" alt="Логотип магазина «Техномарт»">
         </a>
         <form action="#" method="GET">
-          <input type="search" class="search" placeholder="Поиск:">
+          <label class="visually-hidden" for="search">Поиск</label>
+          <input type="search" class="search" id="search" placeholder="Поиск:">
         </form>
         <div class="header-bookmarks-wrapper">
           <a href="#" class="bookmarks">Закладки: 0</a>
@@ -47,9 +48,10 @@
         </i>
         <section class="contact-info">
           <div>
-            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <a href="tel:+78125550555" aria-label="Номер телефона магазина: +7 (812) 555-05-55">+7 (812) 555-05-55</a>
           </div>
-          <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+          <span aria-label="Магазин находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">г. Санкт-Петербург, ул. Б. Конюшенная, д.
+            19/8</span>
         </section>
         <section class="account">
           <div class="login-wrapper">
@@ -86,11 +88,10 @@
   </header>
 
   <main class="main-container">
-    <h1 class="visually-hidden">Техномарт</h1>
 
     <section class="categories">
       <div class="container">
-        <h2 class="section-header visually-hidden">Категории и акции</h2>
+        <h2 class="section-header visually-hidden">Преимущества</h2>
         <ul class="categories-list">
           <li class="category-item materials-category new-item">
             <div class="category-item-inner">
@@ -135,10 +136,10 @@
                   <a href="catalog.html" class="button catalog-button">Открыть каталог</a>
                 </li>
                 <li class="slider-item drills-item">
-                <h3>Дрели</h3>
-                <p>Соседям на радость!</p>
-                <a href="catalog.html" class="button catalog-button">Открыть каталог</a>
-              </li>
+                  <h3>Дрели</h3>
+                  <p>Соседям на радость!</p>
+                  <a href="catalog.html" class="button catalog-button">Открыть каталог</a>
+                </li>
               </ul>
               <div class="slider-arrows">
                 <a href="#">
@@ -149,8 +150,8 @@
                 </a>
               </div>
               <div class="styder">
-                <button type="button" class="slider-dot"></button>
-                <button type="button" class="slider-dot slider-dot--active"></button>
+                <button type="button" class="slider-dot" aria-label="Слайд 'Дрели'"></button>
+                <button type="button" class="slider-dot slider-dot--active" aria-label="Слайд 'Перфораторы'"></button>
               </div>
             </div>
           </li>
@@ -165,7 +166,7 @@
           <a href="#" class="button">Все популярные товары</a>
         </div>
         <ul class="products-list">
-          <li class="product-item">
+          <li class="product-item" tabindex="0">
             <div class="product-controls">
               <div class="buy-button-wrapper">
                 <a href="#" class="buy-button button">Купить</a>
@@ -181,7 +182,7 @@
               <span class="product-price">25500 Р.</span>
             </div>
           </li>
-          <li class="product-item new-item">
+          <li class="product-item new-item" tabindex="0">
             <div class="product-controls">
               <div class="buy-button-wrapper">
                 <a href="#" class="buy-button button">Купить</a>
@@ -197,7 +198,7 @@
               <span class="product-price">15500 Р.</span>
             </div>
           </li>
-          <li class="product-item">
+          <li class="product-item" tabindex="0">
             <div class="product-controls">
               <div class="buy-button-wrapper">
                 <a href="#" class="buy-button button">Купить</a>
@@ -213,7 +214,7 @@
               <span class="product-price">25500 Р.</span>
             </div>
           </li>
-          <li class="product-item new-item">
+          <li class="product-item new-item" tabindex="0">
             <div class="product-controls">
               <div class="buy-button-wrapper">
                 <a href="#" class="buy-button button">Купить</a>
@@ -343,7 +344,9 @@
         <h2 class="section-header">Контакты</h2>
         <p>Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
-        <img src="img/map.jpg" width="300" height="158" alt="Карта с местоположением офиса">
+        <a href="#" class="contacts-map">
+          <img src="img/map.jpg" width="300" height="158" alt="Карта с местоположением офиса">
+        </a>
         <a href="#" class="button">Заблудились? Напишите нам!</a>
       </section>
     </div>
@@ -356,7 +359,9 @@
           <a href="index.html" class="technomart-logo footer-logo">
             <img src="img/icons/technomart.svg" width="138" height="23" alt="Логотип магазина «Техномарт»">
           </a>
-          <p class="footer-info">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          <p class="footer-info"
+            aria-label="Магазин находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8. Номер телефона +7 (812) 555-05-55">
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
             +7 (812) 555-05-55
           </p>
         </div>
@@ -404,17 +409,17 @@
         <section class="footer-social">
           <ul class="social-list">
             <li>
-              <a href="#" class="social-button" title="Мы в Vk">
+              <a href="#" class="social-button" aria-label="Вконтакте">
                 <img src="img/icons/vk-icon.svg" width="26" height="15" alt="Vk">
               </a>
             </li>
             <li>
-              <a href="#" class="social-button" title="Мы в Facebook">
+              <a href="#" class="social-button" aria-label="Фейсбук">
                 <img src="img/icons/fb-icon.svg" width="12" height="22" alt="Facebook">
               </a>
             </li>
             <li>
-              <a href="#" class="social-button" title="Мы в instagram">
+              <a href="#" class="social-button" aria-label="Инстаграм">
                 <img src="img/icons/instagram-icon.svg" width="21" height="21" alt="instagram">
               </a>
             </li>
@@ -422,7 +427,7 @@
         </section>
         <section class="footer-additional-info">
           <p class="footer-feedback">Обратная связь:<br>
-            <a href="#">mail@htmlacademy.ru</a>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p class="footer-copyright">Разработано — <br>
             <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
@@ -433,7 +438,7 @@
   </footer>
 
   <section class="modal feedback-modal">
-    <button class="modal-close" aria-label="Закрыть">
+    <button class="modal-close" type="button">
       <img src="img/icons/close-icon.svg" width="21" height="21" alt="Закрыть">
     </button>
     <h2 class="section-header visually-hidden">Обратная связь</h2>
@@ -459,10 +464,13 @@
   </section>
 
   <section class="modal map-modal">
-    <button class="modal-close" aria-label="Закрыть">
+    <button class="modal-close" type="button">
       <img src="img/icons/close-icon.svg" width="21" height="21" alt="Закрыть">
     </button>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.3208587157113!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1613572510233!5m2!1sru!2sru" width="940" height="450" style="border:0;" allowfullscreen="" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253322!2d30.3208587157113!3d59.938716481876234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1613572510233!5m2!1sru!2sru"
+      width="940" height="450" style="border:0;" allowfullscreen=""
+      title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
   </section>
 </body>
 
