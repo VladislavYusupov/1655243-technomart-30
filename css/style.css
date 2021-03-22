@@ -488,7 +488,7 @@ img {
   opacity: 0.3;
 }
 
-.logout {
+.logout-button {
   content: '';
   position: absolute;
   top: 50%;
@@ -499,12 +499,12 @@ img {
   background-image: url(../img/icons/logout-icon.svg);
 }
 
-.logout:hover,
-.logout:focus {
+.logout-button:hover,
+.logout-button:focus {
   background-image: url(../img/icons/blue-logout-icon.svg);
 }
 
-.logout:active {
+.logout-button:active {
   opacity: 0.3;
 }
 
@@ -1736,6 +1736,10 @@ img {
   border-bottom: 1px solid var(--basic-black-transparent);
   padding-bottom: 25px;
   margin-bottom: 15px;
+}
+
+.filter-block input:focus + label {
+  outline: 2px solid black;
 }
 
 .price-filter {
