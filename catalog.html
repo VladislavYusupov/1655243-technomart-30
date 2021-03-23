@@ -8,13 +8,8 @@
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css" >
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body inner-page">
@@ -34,12 +29,12 @@
         <div class="header-basket-wrapper">
           <a href="#" class="basket">Корзина: 10</a>
         </div>
-        <a href="#" class="button-order header-menu-item">Оформить заказ</a>
+        <a href="#" class="button-order button">Оформить заказ</a>
       </div>
     </div>
 
     <div class="header-container container">
-      <div class="header-info">
+      <div class="header-content">
         <i class="technomart-description">
           Интернет-магазин<br>
           строительных материалов<br>
@@ -106,15 +101,15 @@
           <a href="catalog.html">Каталог</a>
         </li>
         <li class="breadcrumbs-item">
-          <a href="catalog.html">Инструмент</a>
+          <a href="#">Инструмент</a>
         </li>
         <li class="breadcrumbs-item breadcrumbs-current">
           Перфораторы
         </li>
       </ul>
 
-      <div class="page-title-wrapper">
-        <h1 class="page-title">Перфораторы</h1>
+      <div class="catalog-title-wrapper">
+        <h1 class="catalog-title">Перфораторы</h1>
       </div>
 
       <div class="catalog-wrapper">
@@ -131,8 +126,8 @@
                   <div class="scale">
                     <div class="bar" style="width: 152px; margin-left: 0%"></div>
                   </div>
-                  <div class="toggle toggle-min" tabindex="0" style="left: 18px"></div>
-                  <div class="toggle toggle-max" tabindex="0" style="left: 160px"></div>
+                  <div class="toggle toggle-min" tabindex="0" style="left: 18px" aria-label="Минимальная цена"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left: 160px" aria-label="Максимальная цена"></div>
                 </div>
                 <div class="range-price">
                   <label class="visually-hidden" for="min-price">Минимальная цена</label>
@@ -383,7 +378,7 @@
     <section class="about-punchers">
       <div class="container">
         <h2>Пара слов о перфораторах</h2>
-        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+        <p>Перфоратор – универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
           кирпиче,
           бетоне и камне.<br />
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели,
@@ -411,19 +406,19 @@
         </div>
         <nav class="footer-navigation">
           <ul>
-            <li class="footer-navigation__item">
+            <li class="footer-navigation-item">
               <a href="#">Компания</a>
             </li>
-            <li class="footer-navigation__item">
+            <li class="footer-navigation-item">
               <a href="#">Новости</a>
             </li>
-            <li class="footer-navigation__item">
+            <li class="footer-navigation-item">
               <a href="catalog.html">Каталог</a>
             </li>
-            <li class="footer-navigation__item">
+            <li class="footer-navigation-item">
               <a href="#">Доставка</a>
             </li>
-            <li class="footer-navigation__item">
+            <li class="footer-navigation-item">
               <a href="#">Контакты</a>
             </li>
           </ul>
