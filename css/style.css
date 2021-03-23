@@ -895,6 +895,7 @@ img {
   height: 10px;
   border: 2px solid var(--white);
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .slider-dot--active {
@@ -1065,6 +1066,7 @@ img {
   margin-left: 11px;
   border-radius: 3px;
   box-sizing: border-box;
+  font-size: 17px;
 }
 
 .product-price::before {
@@ -1985,7 +1987,8 @@ img {
   background-image: url(../img/icons/checkbox-mark-hover.svg);
 }
 
-.manufacturers-filter-item input:disabled + label::before {
+.manufacturers-filter-item input:disabled + label::before,
+.manufacturers-filter-item input:disabled + label {
   opacity: 0.5;
 }
 
@@ -2054,7 +2057,8 @@ img {
   background-color: var(--input-grey-dark);
 }
 
-.power-filter-item input:disabled + label::before{
+.power-filter-item input:disabled + label::before,
+.power-filter-item input:disabled + label {
   opacity: 0.5;
 }
 
@@ -2157,6 +2161,7 @@ img {
   padding: 0;
   margin: 0;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .asc-sort-button {
