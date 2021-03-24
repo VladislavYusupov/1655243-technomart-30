@@ -8,7 +8,7 @@
   <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="css/normalize.css" >
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,6 +21,7 @@
           <img src="img/icons/technomart.svg" width="108" height="18" alt="Логотип магазина «Техномарт»">
         </a>
         <form action="#" method="GET">
+          <label class="visually-hidden" for="search">Поиск</label>
           <input type="search" class="search" placeholder="Поиск:">
         </form>
         <div class="header-bookmarks-wrapper">
@@ -447,20 +448,14 @@
           Все права защищены</p>
         <section class="footer-social">
           <ul class="social-list">
-            <li>
-              <a href="#" class="social-button" aria-label="Вконтакте">
-                <img src="img/icons/vk-icon.svg" width="26" height="15" alt="Vk">
-              </a>
+            <li class="social-item">
+              <a href="#" class="social-button" aria-label="Вконтакте"></a>
             </li>
-            <li>
-              <a href="#" class="social-button" aria-label="Фейсбук">
-                <img src="img/icons/fb-icon.svg" width="12" height="22" alt="Facebook">
-              </a>
+            <li class="social-item">
+              <a href="#" class="social-button" aria-label="Фейсбук"></a>
             </li>
-            <li>
-              <a href="#" class="social-button" aria-label="Инстаграм">
-                <img src="img/icons/instagram-icon.svg" width="21" height="21" alt="instagram">
-              </a>
+            <li class="social-item">
+              <a href="#" class="social-button" aria-label="Инстаграм"></a>
             </li>
           </ul>
         </section>
@@ -477,11 +472,8 @@
   </footer>
 
   <section class="modal notification-modal">
-    <button type="button" class="modal-close" aria-label="Закрыть">
-      <img src="img/icons/close-icon.svg" width="21" height="21" alt="Закрыть">
-    </button>
+    <button type="button" class="modal-close" aria-label="Закрыть"></button>
     <div class="modal-message">
-      <img src="img/icons/mark-icon.svg" width="66" height="66" alt="Товар успешно добавлен">
       <b>Товар добавлен в корзину!</b>
     </div>
     <div class="modal-actions">
